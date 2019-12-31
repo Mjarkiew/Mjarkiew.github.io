@@ -9,6 +9,9 @@
     <body>
         <div class="container">
             <header id="site-header">
+                <div class="controls-bar">
+                    <div class="language-select"><a id= "lang-active" href="#">English</a><a id= "lang-pl" href="./pl">Polish</a><a id= "lang-ru" href="./ru">Russian</a></div>
+                </div>
                 <h1>Mateusz Jarkiewicz</h1>
                 <div id="phonetic">/mɑːtɛʊʃ jɑˈrkjɛviːtʃ/</div>
                 <div id="misc-info">
@@ -19,13 +22,23 @@
                     </ul>
                 </nav>
             </header>
-            <main id="site-main">
-                <img src="content/main-site/graphics/vectors/construction-icon.svg" id="construction-icon" />
-                <p id="construction-label">SITE UNDER <br/>CONSTRUCTION</p>
-            </main>
+            <content id="site-content">
+                <h2>Welcome to my website</h2>
+                <img src="content/main-site/graphics/vectors/book-icon.svg" id="book-icon" />
+                <p>
+                    I'd like to think of myself as a programmer of some sort, 
+                    so I've created this site to have information 
+                    about all my <em>significant</em> projects consolidated in one place.
+                    <br/>
+                    <br/>
+                    For now it's going to be just short descriptions and links, but
+                    I might also start displaying small, interactive demos here 
+                    once I get better at web programming. 
+                </p>
+            </content>
             <footer id="site-footer">Copyright &copy; 2019, Mateusz Jarkiewicz</footer>
         </div>
         <!-- <p>Visit my first test website <a href="content/test-site/index.html">here</a>.</p> -->
-        <script src="scripts/main.js"></script>
+        <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>

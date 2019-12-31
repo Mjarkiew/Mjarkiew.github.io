@@ -47,6 +47,39 @@ a {
     margin-bottom: 15px;
 }
 
+#site-header > .controls-bar {
+    position: relative;
+    margin: 0 auto;
+}
+
+#site-header > .controls-bar > .language-select {
+    float: right;
+}
+
+#site-header > .controls-bar > .language-select > a {
+    font-family: 'Spectral SC', serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#site-header > .controls-bar > .language-select > a:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+#site-header > .controls-bar > .language-select > a:active {
+    background-color: #333333;
+    border: 2px solid #333333;
+}
+
+#site-header > .controls-bar > .language-select > #lang-active {
+    border: 2px solid black;
+}
+
 #site-header ul {
     list-style-type: none;
     margin: 0;
@@ -78,19 +111,40 @@ a {
     background-color: #333333;
 }
 
-#site-main {
-    margin: 10% 20%;
+#site-content {
+    padding-top: 10px;
     padding-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% auto;
+    align-items: center;
+    justify-items: center;
 }
 
-#site-main #construction-icon {
-    width: 30%;
+#site-content h2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 5%;
 }
 
-#site-main #construction-label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
+#site-content #book-icon {
+    width: 85%;
+    height: 85%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#site-content p {
+    max-width: 75%;
+    text-align: left;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #site-footer {
