@@ -32,9 +32,9 @@ a {
 
 #site-header h1 {
     font-family: 'Spectral SC', serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 1.25rem;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: -1%;
@@ -42,9 +42,9 @@ a {
 
 #site-header #phonetic {
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: lightgray;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 #site-header > .controls-bar {
@@ -59,35 +59,35 @@ a {
 #site-header > .controls-bar > .language-select > a {
     font-family: 'Spectral SC', serif;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 0.625rem;
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 #site-header > .controls-bar > .language-select > a:hover {
     background-color: black;
-    border: 2px solid black;
+    border: 0.125rem solid black;
     color: white;
 }
 
 #site-header > .controls-bar > .language-select > a:active {
     background-color: #333333;
-    border: 2px solid #333333;
+    border: 0.125rem solid #333333;
 }
 
 #site-header > .controls-bar > .language-select > #lang-active {
-    border: 2px solid black;
+    border: 0.125rem solid black;
 }
 
 #site-header ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
     overflow: hidden;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 0.0625rem solid black;
+    border-bottom: 0.0625rem solid black;
 }
 
 #site-header nav ul li {
@@ -96,10 +96,10 @@ a {
 
 #site-header li a {
     font-family: 'Spectral SC', serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: black;
     text-align: center;
-    padding: 16px;
+    padding: 1rem;
 }
 
 #site-header li a:hover {
@@ -112,11 +112,11 @@ a {
 }
 
 #site-content {
-    padding-top: 10px;
-    padding-bottom: 2.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 3rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% auto;
+    grid-template-rows: 20% auto 20%;
     align-items: center;
     justify-items: center;
 }
@@ -138,20 +138,48 @@ a {
     grid-column-end: 2;
 }
 
-#site-content p {
+#site-content #p1 {
     max-width: 75%;
     text-align: left;
+    font-size: 0.95rem;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
+#site-content #p2 {
+    max-width: 60%;
+    text-align: center;
+    font-size: 0.8rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 4% 4%;
+    padding: 1% 1%;
+    border: 0.1875rem double black;
+}
+
 #site-footer {
     font-family: Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 3rem;
+}
+
+#site-footer > #copy-info {
+    padding-bottom: 0.3125rem;
+}
+
+#site-footer > #graphics-info {
+    font-size: 0.625rem;
+    color: gray;
+}
+
+#site-footer > #graphics-info > a {
+    font-size: 0.625rem;
+    color: gray;
 }
