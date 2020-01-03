@@ -111,75 +111,20 @@ a {
     background-color: #333333;
 }
 
-/*  Content exclusive to index.html  */
-#site-content-home {
-    padding-top: 0.625rem;
-    padding-bottom: 3rem;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% auto 20%;
-}
 
-#site-content-home h2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-bottom: 5%;
-}
-
-#site-content-home #book-icon {
-    width: 85%;
-    height: 85%;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-#site-content-home #p1 {
-    max-width: 75%;
-    text-align: left;
-    font-size: 0.95rem;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-#site-content-home #p2 {
-    max-width: 40%;
-    text-align: center;
-    font-size: 0.8rem;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin: 4% 4%;
-    margin-top: 6%;
-    padding: 1% 1%;
-    border: 0.1875rem double black;
-}
-
-/*  Content exclusive to projects.html   */
-#site-content-projects {
+/*  Content shared between pages    */
+content {
     display: block;
     padding-top: 0.625rem;
     padding-bottom: 3rem;
     min-height: 30vh;
 }
 
-#site-content-projects a {
-    text-decoration: underline;
-}
-
-#site-content-projects h2 {
+#content > h2 {
     padding-bottom: 1%;
 }
 
-#site-content-projects hr {
+content hr {
     display: block;
     margin-left: 12%;
     margin-right: 12%;
@@ -187,6 +132,66 @@ a {
     margin-bottom: 1rem;
     border: 0;
     border-top: 0.0625rem solid black;
+}
+
+/*  Content exclusive to index.html  */
+#introduction {
+    display: grid;
+    min-width: 30%;
+    min-height: 30%;
+    align-items: center;
+    justify-items: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+}
+
+#site-content-home #book-icon {
+    width: 85%;
+    height: 85%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#site-content-home #desc-1 {
+    max-width: 80%;
+    text-align: left;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 1rem 0;
+}
+
+#site-content-home #desc-2 {
+    max-width: 80%;
+    text-align: left;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 1rem 0;
+}
+
+#site-content-home #js-info {
+    max-width: 40%;
+    text-align: center;
+    font-size: 0.8rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 4% auto;
+    padding: 1% 1%;
+    border: 0.1875rem double black;
+}
+
+/*  Content exclusive to projects.html   */
+#site-content-projects a {
+    text-decoration: underline;
 }
 
 #site-content-projects #end-of-realms {
@@ -219,6 +224,7 @@ a {
 }
 
 #end-of-realms .desc-1 {
+    max-width: 80%;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -228,6 +234,7 @@ a {
 }
 
 #end-of-realms .desc-2 {
+    max-width: 80%;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
