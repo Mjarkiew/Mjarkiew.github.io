@@ -111,17 +111,18 @@ a {
     background-color: #333333;
 }
 
-#site-content {
+/*  Content exclusive to index.html  */
+#site-content-home {
     padding-top: 0.625rem;
     padding-bottom: 3rem;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% auto 20%;
     align-items: center;
     justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% auto 20%;
 }
 
-#site-content h2 {
+#site-content-home h2 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -129,7 +130,7 @@ a {
     padding-bottom: 5%;
 }
 
-#site-content #book-icon {
+#site-content-home #book-icon {
     width: 85%;
     height: 85%;
     grid-row-start: 2;
@@ -138,7 +139,7 @@ a {
     grid-column-end: 2;
 }
 
-#site-content #p1 {
+#site-content-home #p1 {
     max-width: 75%;
     text-align: left;
     font-size: 0.95rem;
@@ -148,8 +149,8 @@ a {
     grid-column-end: 3;
 }
 
-#site-content #p2 {
-    max-width: 60%;
+#site-content-home #p2 {
+    max-width: 40%;
     text-align: center;
     font-size: 0.8rem;
     grid-row-start: 3;
@@ -157,8 +158,91 @@ a {
     grid-column-start: 1;
     grid-column-end: 3;
     margin: 4% 4%;
+    margin-top: 6%;
     padding: 1% 1%;
     border: 0.1875rem double black;
+}
+
+/*  Content exclusive to projects.html   */
+#site-content-projects {
+    display: block;
+    padding-top: 0.625rem;
+    padding-bottom: 3rem;
+    min-height: 30vh;
+}
+
+#site-content-projects a {
+    text-decoration: underline;
+}
+
+#site-content-projects h2 {
+    padding-bottom: 1%;
+}
+
+#site-content-projects hr {
+    display: block;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.0625rem solid black;
+}
+
+#site-content-projects #end-of-realms {
+    display: grid;
+    min-width: 30%;
+    min-height: 30%;
+    margin-left: 12%;
+    margin-right: 12%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 1fr 1fr 20%;
+    align-items: center;
+    justify-items: center;
+}
+#end-of-realms .logo {
+    max-width: 100%;
+    max-height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#end-of-realms .title {
+    font-size: 1.5rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+#end-of-realms .desc-1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 3rem;
+    text-align: left;
+}
+
+#end-of-realms .desc-2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 3rem;
+    text-align: left;
+}
+
+#end-of-realms .tech {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 2rem;
+    align-self: center;
 }
 
 #site-footer {
