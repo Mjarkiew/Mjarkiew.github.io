@@ -47,6 +47,12 @@ a {
     margin-bottom: 0.9375rem;
 }
 
+#site-header #placeholder {
+    font-family: Arial, sans-serif;
+    padding-top: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+
 #site-header > .controls-bar {
     position: relative;
     margin: 0 auto;
