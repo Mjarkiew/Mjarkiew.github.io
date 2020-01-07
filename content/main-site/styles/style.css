@@ -53,6 +53,13 @@ a {
     margin-bottom: 0.9375rem;
 }
 
+#site-header #warning {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: yellow;
+    margin-bottom: 0.9375rem;
+}
+
 #site-header > .controls-bar {
     position: relative;
     margin: 0 auto;

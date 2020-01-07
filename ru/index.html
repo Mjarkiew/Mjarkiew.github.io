@@ -1,5 +1,59 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mjarkiew's home</title>
+        <link href="/content/main-site/styles/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    </head>
     <body>
-        <h1>Russian site placeholder</h1>
+        <div class="container">
+            <header id="site-header">
+                <div class="controls-bar">
+                    <div class="language-select"><a id= "lang-en" href="/">Английский</a><a id= "lang-pl" href="/pl">Польский</a><a id= "lang-active" href="#">Русский</a></div>
+                </div>
+                <h1>Mateusz Jarkiewicz</h1>
+                <div id="warning">Внимание: Качество Русского перевода может быть на много хуже чем осталные просто из за того что я не настолько хорошо владею этим языком.</div>
+                <div id="misc-info">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Главная</a></li><li><a href="./projects.html">Проекты</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <content id="site-content-home">
+                <h2>Добро пожаловать на мой сайт</h2>
+                <hr>
+                <div id="introduction">
+                    <img src="/content/main-site/graphics/vectors/book-icon.svg" id="book-icon" />
+                    <div id="desc-1">
+                        Я хотел бы считать себя хоть каким-то программистом.
+                        Этот сайт создал для того чтобы иметь возможность представлять
+                        все <em>значительные</em> проекты в которых я участвовал.
+                    </div>
+                    <div id="desc-2">
+                        На данный момент публиковаться здесь будут только 
+                        ссылки и краткие описания, но в будущем 
+                        (когда наберу больше опыта веб-программировании) возможно что
+                        начну демонстрировать что-то более интерактивное.
+                    </div>
+                </div>
+                <hr>
+                <p id="js-info">
+                        Знаю что далеко не всем хотеться разрешать запускать JavaScript на
+                        неизвестных сайтах, поэтому я приложил дополнительные усилия
+                        чтобы сайт работал без его испольования.
+                        <br/></br>
+                        Возможно это измениться в будущем, если начну демонстрировать здесь
+                        что-то более сложное или просто приму решение что поддерживать столько
+                        страниц слишком затратно по времени.
+                </p>
+            </content>
+            <footer id="site-footer">
+                <div id="copy-info">Copyright &copy; 2019-2020, Mateusz Jarkiewicz. Все права защищены.</div>
+                <div id="graphics-info">Вся используемая графика (исключая содержание проектов) доступна на <a href="https://pixabay.com/" target="_blank">pixabay.com</a>.</div>
+            </footer>
+        </div>
     </body>
 </html>
