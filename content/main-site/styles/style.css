@@ -160,7 +160,7 @@ content hr {
     grid-template-rows: 1fr 1fr;
 }
 
-#site-content-home #book-icon {
+.site-content#home #book-icon {
     width: 85%;
     height: 85%;
     grid-row-start: 1;
@@ -169,7 +169,7 @@ content hr {
     grid-column-end: 2;
 }
 
-#site-content-home #desc-1 {
+.site-content#home #desc-1 {
     max-width: 80%;
     text-align: left;
     grid-row-start: 1;
@@ -179,7 +179,7 @@ content hr {
     padding: 1rem 0;
 }
 
-#site-content-home #desc-2 {
+.site-content#home #desc-2 {
     max-width: 80%;
     text-align: left;
     grid-row-start: 2;
@@ -189,7 +189,7 @@ content hr {
     padding: 1rem 0;
 }
 
-#site-content-home #js-info {
+.site-content#home #js-info {
     max-width: 40%;
     text-align: center;
     font-size: 0.8rem;
@@ -202,12 +202,12 @@ content hr {
     border: 0.1875rem double black;
 }
 
-/*  Content exclusive to projects.html   */
-#site-content-projects a {
+/*  Shared content   */
+.site-content a {
     text-decoration: underline;
 }
 
-#site-content-projects #end-of-realms {
+.site-content .item {
     display: grid;
     min-width: 30%;
     min-height: 30%;
@@ -218,7 +218,12 @@ content hr {
     align-items: center;
     justify-items: center;
 }
-#end-of-realms .logo {
+
+.site-content#samples .item {
+    grid-template-columns: 0%;
+}
+
+.item .logo {
     max-width: 100%;
     max-height: 100%;
     grid-row-start: 2;
@@ -227,7 +232,7 @@ content hr {
     grid-column-end: 2;
 }
 
-#end-of-realms .title {
+.item .title {
     font-size: 1.5rem;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -236,7 +241,7 @@ content hr {
     align-self: center;
 }
 
-#end-of-realms .desc-1 {
+.item .desc-1 {
     max-width: 80%;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -246,7 +251,7 @@ content hr {
     text-align: left;
 }
 
-#end-of-realms .desc-2 {
+.item .desc-2 {
     max-width: 80%;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -256,7 +261,16 @@ content hr {
     text-align: left;
 }
 
-#end-of-realms .tech {
+.item .tech {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 2rem;
+    align-self: center;
+}
+
+.item .downloadlink {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
